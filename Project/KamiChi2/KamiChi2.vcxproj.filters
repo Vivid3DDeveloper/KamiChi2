@@ -21,9 +21,15 @@
     <ClCompile Include="kamCore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kamGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kamGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

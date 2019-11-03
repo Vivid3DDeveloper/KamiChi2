@@ -13,6 +13,9 @@ public:
 	void beginRender();
 	void endRender();
 
+	int getW();
+	int getH();
+
 	
 
 private:

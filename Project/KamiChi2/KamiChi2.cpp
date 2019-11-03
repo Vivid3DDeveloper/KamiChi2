@@ -3,8 +3,10 @@
 
 #include <iostream>
 #include "kamCore.h"
+#include "kamGame.h"
 
 kamCore* core = NULL;
+kamGame* game = NULL;
 
 int main()
 {
@@ -12,11 +14,15 @@ int main()
 
 	core = new kamCore(1024, 768);
 
+	game = new kamGame(core);
+
 	while (true) {
 
 		core->updateCore();
 
 		core->beginRender();
+
+		game->drawRect(20, 20, 200, 200, 1, 1, 1, 1);
 
 		core->endRender();
 

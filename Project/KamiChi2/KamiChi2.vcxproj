@@ -106,13 +106,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Git\KamiChi2\3rdParty\glew-2.1.0\include;C:\Git\KamiChi2\3rdParty\glad;C:\Git\KamiChi2\3rdParty\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Git\KamiChi2\3rdParty\glm;C:\Git\KamiChi2\3rdParty\glew-2.1.0\include;C:\Git\KamiChi2\3rdParty\glad;C:\Git\KamiChi2\3rdParty\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>C:\Git\KamiChi2\3rdParty\glew-2.1.0\lib\Release\x64;C:\Git\KamiChi2\3rdParty\glfw\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;glew32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -155,10 +155,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="kamCore.cpp" />
+    <ClCompile Include="kamGame.cpp" />
     <ClCompile Include="KamiChi2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h" />
+    <ClInclude Include="kamGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

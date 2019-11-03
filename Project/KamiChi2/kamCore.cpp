@@ -39,7 +39,13 @@ void kamCore::updateCore() {
 
 void kamCore::beginRender() {
 
+	glClearColor(0,0,0,0);
+
 	glClear(GL_COLOR_BUFFER_BIT);
+
+	glLoadIdentity();
+
+	gluOrtho2D(0, winW, winH, 0);
 
 
 
@@ -48,5 +54,17 @@ void kamCore::beginRender() {
 void kamCore::endRender() {
 
 	glfwSwapBuffers(win);
+
+}
+
+int kamCore::getW() {
+
+	return winW;
+	
+}
+
+int kamCore::getH() {
+
+	return winH;
 
 }
