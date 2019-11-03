@@ -2,10 +2,29 @@
 //
 
 #include <iostream>
+#include "kamCore.h"
+
+kamCore* core = NULL;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	std::cout << "Starting KamiChi 2 - Return of the Saviour" << std::endl;
+
+	core = new kamCore(1024, 768);
+
+	while (true) {
+
+		core->updateCore();
+
+		core->beginRender();
+
+		core->endRender();
+
+
+	}
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
