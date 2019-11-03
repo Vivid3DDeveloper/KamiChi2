@@ -11,6 +11,9 @@ public:
 
 	void drawRect(int x, int y, int w, int h, float r, float g, float b, float a);
 
+	int getW();
+	int getH();
+
 private:
 
 	kamCore* core;

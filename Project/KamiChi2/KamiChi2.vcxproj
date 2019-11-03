@@ -157,10 +157,12 @@
     <ClCompile Include="kamCore.cpp" />
     <ClCompile Include="kamGame.cpp" />
     <ClCompile Include="KamiChi2.cpp" />
+    <ClCompile Include="kamStars.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h" />
     <ClInclude Include="kamGame.h" />
+    <ClInclude Include="kamStars.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

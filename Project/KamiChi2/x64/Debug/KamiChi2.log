@@ -1,2 +1,12 @@
-﻿  kamCore.cpp
+﻿  kamStars.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(28,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(29,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(30,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(62,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(63,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(64,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(85,56): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(85,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(85,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(85,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   KamiChi2.vcxproj -> C:\Git\KamiChi2\Project\KamiChi2\x64\Debug\KamiChi2.exe

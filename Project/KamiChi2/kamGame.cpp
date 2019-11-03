@@ -11,6 +11,8 @@ void kamGame::drawRect(int x, int y, int w, int h, float r, float g, float b, fl
 	//glLoadMatrixf()
 
 
+	glColor4f(r, g, b, a);
+
 	glBegin(GL_QUADS);
 
 	glVertex2f(x,y);
@@ -20,5 +22,17 @@ void kamGame::drawRect(int x, int y, int w, int h, float r, float g, float b, fl
 
 	glEnd();
 
+
+}
+
+int kamGame::getW() {
+
+	return core->getW();
+
+}
+
+int kamGame::getH() {
+
+	return core->getH();
 
 }
