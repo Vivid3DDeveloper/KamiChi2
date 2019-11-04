@@ -6,7 +6,10 @@ kamGame::kamGame(kamCore* c) {
 	core = c;
 	engine = createIrrKlangDevice();
 
+
 }
+
+
 
 void kamGame::drawImg(int x, int y, int w, int h, float r, float g, float b, float a, kImage* img)
 {

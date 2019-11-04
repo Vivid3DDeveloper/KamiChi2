@@ -3,6 +3,30 @@
 #include <vector>
 #include <iostream>
 
+kImage::kImage(unsigned char* data, int cw, int ch) {
+
+
+	w = (int)cw;
+	h = (int)ch;
+
+
+
+	glGenTextures(1, &id);
+
+
+
+	glEnable(GL_TEXTURE_2D);
+
+	glBindTexture(GL_TEXTURE_2D, id);
+
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+	glTexImage2D(GL_TEXTURE_2D, 0, 4, w, h, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+
+
+
+}
 
 kImage::kImage(const char* path) {
 

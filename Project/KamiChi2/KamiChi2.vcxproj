@@ -161,6 +161,7 @@
     <ClCompile Include="kamLogos.cpp" />
     <ClCompile Include="kamMenu.cpp" />
     <ClCompile Include="kamStars.cpp" />
+    <ClCompile Include="kFont.cpp" />
     <ClCompile Include="kImage.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +170,7 @@
     <ClInclude Include="kamLogos.h" />
     <ClInclude Include="kamMenu.h" />
     <ClInclude Include="kamStars.h" />
+    <ClInclude Include="kFont.h" />
     <ClInclude Include="kImage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

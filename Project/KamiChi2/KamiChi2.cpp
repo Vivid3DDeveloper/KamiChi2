@@ -6,11 +6,14 @@
 #include "kamGame.h"
 #include "kamStars.h"
 #include "kamLogos.h"
+#include "kamMenu.h"
+#include "kFont.h"
 
 kamCore* core = NULL;
 kamGame* game = NULL;
 kamStars* stars = NULL;
 kamLogos* logos = NULL;
+kamMenu* menus = NULL;
 
 int goto_code = 0;
 
@@ -22,6 +25,14 @@ const int gameH = 768;
 void do_menu() {
 
 	kImage* title = new kImage("data/img/logo/logo3.png");
+
+	menus = new kamMenu(game, 3);
+
+	menus->addMenu("New Campaign", 0);
+	menus->addMenu("Time-Trial", 1);
+	menus->addMenu("Options", 2);
+	menus->addMenu("Exit", 3);
+
 
 	while (true) {
 
@@ -87,6 +98,7 @@ void do_intro() {
 
 	core->setKeyCallback(&input_Intro);
 
+	kFont* f1 = new kFont("data/font/font.pf", game);
 
 	while (true) {
 
@@ -115,6 +127,8 @@ void do_intro() {
 		stars->render();
 
 		logos->render();
+
+		f1->drawText("This is a test 1234/n", 20, 20, 1, 1, 1, 1);
 
 		core->endRender();
 

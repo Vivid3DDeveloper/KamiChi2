@@ -1,6 +1,7 @@
 #pragma once
 #include "kamCore.h"
 #include "kImage.h"
+
 #include <glm//glm.hpp>
 #include <glm//ext.hpp>
 #include <irrKlang.h>
@@ -18,11 +19,14 @@ public:
 	int getH();
 
 	void playMusic(const char* path);
+	
 
 private:
 
 	kamCore* core;
 	ISoundEngine* engine;
+	
+
 
 };
 

@@ -6,6 +6,7 @@ class kImage
 public:
 
 	kImage(const char* path);
+	kImage(unsigned char* data, int w, int h);
 	void bind(int unit);
 	void release(int unit);
 
