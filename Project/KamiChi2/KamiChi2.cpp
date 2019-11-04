@@ -114,8 +114,13 @@ void do_menu() {
 
 	core->setKeyCallback(&input_menu);
 
+	float scale = 0.01f;
 
 	while (true) {
+
+		if (scale < 2.0) {
+			scale = scale + 0.01f;
+		}
 
 		core->updateCore();
 
@@ -137,7 +142,7 @@ void do_menu() {
 
 		stars->render();
 
-		game->drawImg(game->getW() / 2 - 128, 64, 256, 80, 1, 1, 1, 1, title);
+		game->drawImg(game->getW() / 2 - 128, 64, 256, 80, 1, 1, 1, 1, title, scale);
 
 		menus->render();
 

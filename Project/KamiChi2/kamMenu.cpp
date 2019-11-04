@@ -60,13 +60,14 @@ void kamMenu::render() {
 	int by = 250;
 	int bx = 60;
 
-	
 
 	for (int i = 0; i < numMenu; i++) {
 
 		kMenu* m = items[i];
 
 		game->setBlend(BLENDMODE::Alpha);
+
+		
 
 		//game->drawImg(bx - 128, by, 256, 50, 1, 1, 1, 1, menuBG);
 		mFont->drawText(m->title, bx , by , 1, 1, 1, 1);

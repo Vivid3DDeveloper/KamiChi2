@@ -33,6 +33,56 @@ void setBlendGL(BLENDMODE mode) {
 
 }
 
+
+void kamGame::drawImg(int x, int y, int w, int h, float r, float g, float b, float a, kImage* img,float scale)
+{
+
+	float x1, y1, x2, y2, x3, y3, x4, y4;
+
+	float mx = x + w / 2;
+	float my = y + h / 2;
+
+	x1 = x - mx;
+	y1 = y - my;
+	x2 = (x + w) - mx;
+	y2 = (y - my);
+	x3 = x2;
+	y3 = (y + h) - my;
+	x4 = x1;
+	y4 = y3;
+
+	x1 = x1 * scale;
+	y1 = y1 * scale;
+	x2 = x2 * scale;
+	y2 = y2 * scale;
+	x3 = x3 * scale;
+	y3 = y3 * scale;
+	x4 = x4 * scale;
+	y4 = y4 * scale;
+
+	setBlendGL(bMode);
+
+	img->bind(0);
+
+	glColor4f(r, g, b, a);
+
+	glBegin(GL_QUADS);
+
+	glTexCoord2f(0, 0);
+	glVertex2f(mx+x1, my+y1);
+	glTexCoord2f(1, 0);
+	glVertex2f(mx+x2, my+y2);
+	glTexCoord2f(1, 1);
+	glVertex2f(mx+x3,my+y3);
+	glTexCoord2f(0, 1);
+	glVertex2f(mx+x4,my+y4);
+
+	glEnd();
+
+	img->release(0);
+
+}
+
 void kamGame::drawImg(int x, int y, int w, int h, float r, float g, float b, float a, kImage* img)
 {
 
