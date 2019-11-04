@@ -159,6 +159,7 @@
     <ClCompile Include="kamGame.cpp" />
     <ClCompile Include="KamiChi2.cpp" />
     <ClCompile Include="kamLogos.cpp" />
+    <ClCompile Include="kamMenu.cpp" />
     <ClCompile Include="kamStars.cpp" />
     <ClCompile Include="kImage.cpp" />
   </ItemGroup>
@@ -166,6 +167,7 @@
     <ClInclude Include="kamCore.h" />
     <ClInclude Include="kamGame.h" />
     <ClInclude Include="kamLogos.h" />
+    <ClInclude Include="kamMenu.h" />
     <ClInclude Include="kamStars.h" />
     <ClInclude Include="kImage.h" />
   </ItemGroup>

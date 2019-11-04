@@ -36,6 +36,9 @@
     <ClCompile Include="kamLogos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kamMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="kamLogos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kamMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
