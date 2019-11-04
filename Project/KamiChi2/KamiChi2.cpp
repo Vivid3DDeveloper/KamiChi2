@@ -22,16 +22,97 @@ const int num_stars = 300;
 const int gameW = 1300;
 const int gameH = 768;
 
+void do_begincam()
+{
+
+	while (true) {
+
+		core->updateCore();
+
+		//stars->update(8);
+
+		//logos->update();
+
+		//menus->update();
+
+		if (goto_code == 4) {
+
+		//	do_begincam();
+
+
+		}
+
+		core->beginRender();
+
+		//game->drawImg(20, 20, 200, 200, 1, 1, 1, 1,star1);
+
+		//stars->render();
+
+		//game->drawImg(game->getW() / 2 - 128, 64, 256, 80, 1, 1, 1, 1, title);
+
+		//menus->render();
+
+		//logos->render();
+
+		core->endRender();
+
+	}
+}
+
+void input_menu(KEYS key,bool press) {
+
+	switch (key) {
+
+	case KEYS::Action:
+
+		if (press) {
+
+			
+			menus->action();
+
+		}
+	
+
+		break;
+	case KEYS::Up:
+
+		if (press) {
+			menus->up();
+		}
+		break;
+	case KEYS::Down:
+
+		if (press) {
+			menus->down();
+		}
+		break;
+
+	}
+
+}
+
+void act_newCampaign(int id) {
+
+	goto_code = 3;
+
+}
+
+void act_null(int id) {
+
+}
+
 void do_menu() {
 
 	kImage* title = new kImage("data/img/logo/logo3.png");
 
-	menus = new kamMenu(game, 3);
+	menus = new kamMenu(game, 4);
 
-	menus->addMenu("New Campaign", 0);
-	menus->addMenu("Time-Trial", 1);
-	menus->addMenu("Options", 2);
-	menus->addMenu("Exit", 3);
+	menus->addMenu("New Campaign/n", 0,&act_newCampaign);
+	menus->addMenu("Time-Trial/n", 1,&act_null);
+	menus->addMenu("Options/n", 2,&act_null);
+	menus->addMenu("Exit/n", 3,&act_null);
+
+	core->setKeyCallback(&input_menu);
 
 
 	while (true) {
@@ -42,7 +123,13 @@ void do_menu() {
 
 		//logos->update();
 
+		menus->update();
 		
+		if (goto_code==3) {
+
+			do_begincam();
+
+		}
 
 		core->beginRender();
 
@@ -51,6 +138,8 @@ void do_menu() {
 		stars->render();
 
 		game->drawImg(game->getW() / 2 - 128, 64, 256, 80, 1, 1, 1, 1, title);
+
+		menus->render();
 
 		//logos->render();
 
@@ -61,7 +150,9 @@ void do_menu() {
 
 }
 
-void input_Intro(KEYS key) {
+
+
+void input_Intro(KEYS key,bool press) {
 
 	switch (key) {
 
@@ -128,7 +219,7 @@ void do_intro() {
 
 		logos->render();
 
-		f1->drawText("This is a test 1234/n", 20, 20, 1, 1, 1, 1);
+		f1->drawText("KamiChi 2 - Return Of The Saviour (c)GameClan 2020/n", 5, 5, 1, 1, 1, 1);
 
 		core->endRender();
 

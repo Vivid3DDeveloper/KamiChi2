@@ -75,9 +75,7 @@ void kamStars::update(float move) {
 void kamStars::render() {
 
 	
-	glEnable(GL_BLEND);
-
-	glBlendFunc(GL_ONE, GL_ONE);
+	game->setBlend(BLENDMODE::Additive);
 
 	float ss = 12;
 

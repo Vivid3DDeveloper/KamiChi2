@@ -21,7 +21,7 @@ public:
 
 	int getW();
 	int getH();
-	void setKeyCallback(void (*f)(KEYS) );
+	void setKeyCallback(void (*f)(KEYS,bool) );
 
 	
 

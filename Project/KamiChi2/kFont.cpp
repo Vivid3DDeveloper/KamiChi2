@@ -85,9 +85,9 @@ void kFont::drawText(const char* text, int x, int y, float r, float g, float b, 
 
 		if (cnum >= 0 && cnum <= 255) {
 
-			game->drawImg(x, y, chars[cnum]->w, chars[cnum]->h, 1, 1, 1, 1, chars[cnum]);
+			game->drawImg(x, y, (float)(chars[cnum]->w)*scale, (float)(chars[cnum]->h)*scale, 1, 1, 1, 1, chars[cnum]);
 
-			x = x + chars[cnum]->w;
+			x = x + (float)(chars[cnum]->w) * scale;
 
 		}
 

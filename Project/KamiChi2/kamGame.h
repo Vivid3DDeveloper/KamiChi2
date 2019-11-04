@@ -6,6 +6,13 @@
 #include <glm//ext.hpp>
 #include <irrKlang.h>
 using namespace irrklang;
+
+enum BLENDMODE {
+
+	Solid,Alpha,Additive
+
+};
+
 class kamGame
 {
 public:
@@ -18,6 +25,8 @@ public:
 	int getW();
 	int getH();
 
+	void setBlend(BLENDMODE mode);
+
 	void playMusic(const char* path);
 	
 
@@ -25,6 +34,7 @@ private:
 
 	kamCore* core;
 	ISoundEngine* engine;
+	BLENDMODE bMode;
 	
 
 

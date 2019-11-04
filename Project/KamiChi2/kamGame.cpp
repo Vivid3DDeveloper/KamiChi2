@@ -5,14 +5,38 @@ kamGame::kamGame(kamCore* c) {
 
 	core = c;
 	engine = createIrrKlangDevice();
-
+	setBlend(BLENDMODE::Additive);
 
 }
 
+void kamGame::setBlend(BLENDMODE mode) {
 
+	bMode = mode;
+
+}
+
+void setBlendGL(BLENDMODE mode) {
+
+	switch (mode) {
+	case BLENDMODE::Solid:
+		glDisable(GL_BLEND);
+		break;
+	case BLENDMODE::Alpha:
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		break;
+	case BLENDMODE::Additive:
+		glEnable(GL_BLEND);
+		glBlendFunc(GL_ONE, GL_ONE);
+		break;
+	}
+
+}
 
 void kamGame::drawImg(int x, int y, int w, int h, float r, float g, float b, float a, kImage* img)
 {
+
+	setBlendGL(bMode);
 
 	img->bind(0);
 
@@ -39,6 +63,7 @@ void kamGame::drawRect(int x, int y, int w, int h, float r, float g, float b, fl
 
 	//glLoadMatrixf()
 
+	setBlendGL(bMode);
 
 	glColor4f(r, g, b, a);
 

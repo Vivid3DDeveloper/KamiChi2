@@ -59,6 +59,8 @@ void kamLogos::update() {
 
 void kamLogos::render() {
 
+	game->setBlend(BLENDMODE::Alpha);
+
 	for (int i = 0; i < numLogo; i++) {
 
 		kImage* s = logo[i];

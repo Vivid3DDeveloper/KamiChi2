@@ -1,7 +1,7 @@
 #include "kamCore.h"
 #include <iostream>
 
-void (*key_fun)(KEYS);
+void (*key_fun)(KEYS,bool);
 
 kamCore::kamCore(int w, int h)
 {
@@ -38,14 +38,24 @@ void key_cb(GLFWwindow *win,int key,int scancode,int action,int mods) {
 	if (key == GLFW_KEY_ENTER || key == GLFW_KEY_SPACE)
 	{
 
-		key_fun(KEYS::Action);
+		key_fun(KEYS::Action,action == GLFW_PRESS);
 		//&key_fun(KEYS::Action);
+
+	}
+	if (key == GLFW_KEY_UP) {
+
+		key_fun(KEYS::Up,action == GLFW_PRESS);
+
+	}
+	if (key == GLFW_KEY_DOWN) {
+
+		key_fun(KEYS::Down,action == GLFW_PRESS);
 
 	}
 
 }
 
-void kamCore::setKeyCallback( void (*f)(KEYS) ) {
+void kamCore::setKeyCallback( void (*f)(KEYS,bool) ) {
 
 
 	key_fun =f;
