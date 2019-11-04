@@ -27,6 +27,15 @@
     <ClCompile Include="kamStars.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\png\lodepng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kamLogos.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h">
@@ -36,6 +45,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="kamStars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kamLogos.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

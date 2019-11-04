@@ -5,6 +5,7 @@ kamStars::kamStars(kamGame* g) {
 
 	game = g;
 
+	star1 = new kImage("data/img/star/star1.png");
 }
 
 void kamStars::initStars(int num) {
@@ -27,9 +28,9 @@ void kamStars::initStars(int num) {
 
 		x = rand() % game->getW();
 		y = rand() % game->getH();
-		z = rand() % 1024;
+		z = rand() % 10024;
 
-		z = z / 1024.0f;
+		z = z / 10024.0f;
 
 		ks->x = x;
 		ks->y = y;
@@ -48,22 +49,22 @@ void kamStars::initStars(int num) {
 
 }
 
-void kamStars::update() {
+void kamStars::update(float move) {
 
 
 	for (int i = 0; i < numStars; i++) {
 		
 		kStar* s = stars[i];
 
-		s->x = s->x - 4.0f * s->z;
+		s->x = s->x - move * s->z;
 
 		if (s->x < -20)
 		{
 			s->x = game->getW() + 10;
 			s->y = rand() % game->getH();
-			s->z = rand() % 1000;
+			s->z = rand() % 10024;
 
-			s->z = s->z / 1000.0f;
+			s->z = s->z / 10024.0f;
 
 
 		}
@@ -74,6 +75,12 @@ void kamStars::update() {
 void kamStars::render() {
 
 	
+	glEnable(GL_BLEND);
+
+	glBlendFunc(GL_ONE, GL_ONE);
+
+	float ss = 12;
+
 	for (int i = 0; i < numStars; i++) {
 
 		kStar* s = stars[i];
@@ -82,7 +89,8 @@ void kamStars::render() {
 		float sv = s->z;
 
 
-		game->drawRect(s->x - 4 * sv, s->y-4 * sv, 8 * sv, 8 * sv, s->r * cv,s->g * cv,s->b * cv,1.0);
+		game->drawImg(s->x - ss * sv, s->y-ss * sv, (ss*2) * sv, (ss*2) * sv, s->r * cv,s->g * cv,s->b * cv,1.0,star1);
+
 
 	}
 

@@ -1,12 +1,14 @@
 #pragma once
 #include "kamGame.h"
 #include <vector>
+#include "kImage.h"
 
 struct kStar {
 
 	float x, y, z;
 	float lx, ly, lz;
 	float r, g, b;
+	kImage* img;
 
 };
 
@@ -18,7 +20,7 @@ public:
 
 	void initStars(int num);
 
-	void update();
+	void update(float move);
 	void render();
 
 private:
@@ -26,6 +28,7 @@ private:
 	kamGame* game;
 	int numStars = 0;
 	std::vector<kStar *> stars;
+	kImage* star1;
 
 };
 

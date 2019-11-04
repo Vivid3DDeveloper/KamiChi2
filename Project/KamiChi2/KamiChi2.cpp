@@ -5,36 +5,66 @@
 #include "kamCore.h"
 #include "kamGame.h"
 #include "kamStars.h"
+#include "kamLogos.h"
 
 kamCore* core = NULL;
 kamGame* game = NULL;
 kamStars* stars = NULL;
+kamLogos* logos = NULL;
 
 const int num_stars = 300;
+
+const int gameW = 1300;
+const int gameH = 768;
 
 int main()
 {
 	std::cout << "Starting KamiChi 2 - Return of the Saviour" << std::endl;
 
-	core = new kamCore(1024, 768);
+	core = new kamCore(gameW, gameH);
 
 	game = new kamGame(core);
 	
 	stars = new kamStars(game);
 
+	logos = new kamLogos(game, 3);
+
 	stars->initStars(num_stars);
+
+	kImage * star1 = new kImage("data/img/star/star1.png");
+
+	kImage* logo1 = new kImage("data/img/logo/logo1.png");
+	kImage* logo2 = new kImage("data/img/logo/logo2.png");
+	kImage* logo3 = new kImage("data/img/logo/logo3.png");
+
+	logos->setLogo(0, logo1);
+	logos->setLogo(1, logo2);
+	logos->setLogo(2, logo3);
+
+	game->playMusic("data/sfx/song/menusong1.mp3");
+
 
 	while (true) {
 
 		core->updateCore();
 
-		stars->update();
+		stars->update(8);
+
+		logos->update();
+
+		if (logos->done()) {
+
+			exit(-1);
+
+		}
 
 		core->beginRender();
 
-	//	game->drawRect(20, 20, 200, 200, 1, 1, 1, 1);
+		//game->drawImg(20, 20, 200, 200, 1, 1, 1, 1,star1);
 
 		stars->render();
+
+		logos->render();
 
 		core->endRender();
 
