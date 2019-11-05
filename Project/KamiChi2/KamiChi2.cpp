@@ -116,6 +116,8 @@ void do_menu() {
 
 	float scale = 0.01f;
 
+	kImage* starbg = new kImage("data/img/star/starbg1.png");
+
 	while (true) {
 
 		if (scale < 2.0) {
@@ -141,6 +143,9 @@ void do_menu() {
 		//game->drawImg(20, 20, 200, 200, 1, 1, 1, 1,star1);
 
 		stars->render();
+
+		game->drawImg(0, 0, game->getW(), game->getH(), 1, 1, 1, 1, starbg);
+
 
 		game->drawImg(game->getW() / 2 - 128, 64, 256, 80, 1, 1, 1, 1, title, scale);
 
@@ -185,11 +190,13 @@ void do_intro() {
 	kImage* logo2 = new kImage("data/img/logo/logo2.png");
 	kImage* logo3 = new kImage("data/img/logo/logo3.png");
 
+	kImage* starbg = new kImage("data/img/star/starbg1.png");
+
 	logos->setLogo(0, logo1);
 	logos->setLogo(1, logo2);
 	logos->setLogo(2, logo3);
 
-	game->playMusic("data/sfx/song/menusong1.mp3");
+	game->playMusic("data/sfx/song/menusong2.mp3");
 
 
 	core->setKeyCallback(&input_Intro);
@@ -219,6 +226,7 @@ void do_intro() {
 		core->beginRender();
 
 		//game->drawImg(20, 20, 200, 200, 1, 1, 1, 1,star1);
+		game->drawImg(0, 0, game->getW(), game->getH(), 1, 1, 1, 1, starbg);
 
 		stars->render();
 

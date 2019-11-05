@@ -5,7 +5,7 @@ kamStars::kamStars(kamGame* g) {
 
 	game = g;
 
-	star1 = new kImage("data/img/star/star1.png");
+	star1 = new kImage("data/img/star/star2.png");
 }
 
 void kamStars::initStars(int num) {
