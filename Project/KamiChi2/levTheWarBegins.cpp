@@ -24,10 +24,13 @@ levTheWarBegins::levTheWarBegins(kamGame *g)
 {
 
 	setGame(g);
+
+	stateLevelIntro* intro = new stateLevelIntro(g);
 	stateNormalMode* normal = new stateNormalMode(g);
 
-	setLevel("The War Begins", 1);
-	setState(normal, 0);
+	setLevel("The War Begins", 2);
+	setState(intro, 0);
+	setState(normal, 1);
 
 
 }
