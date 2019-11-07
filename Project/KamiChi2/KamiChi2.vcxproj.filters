@@ -51,6 +51,15 @@
     <ClCompile Include="levTheWarBegins.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kamState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stateNormalMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stateLevelIntro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h">
@@ -81,6 +90,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="levTheWarBegins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kamState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stateNormalMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stateLevelIntro.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

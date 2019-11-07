@@ -163,9 +163,12 @@
     <ClCompile Include="kamLogos.cpp" />
     <ClCompile Include="kamMenu.cpp" />
     <ClCompile Include="kamStars.cpp" />
+    <ClCompile Include="kamState.cpp" />
     <ClCompile Include="kFont.cpp" />
     <ClCompile Include="kImage.cpp" />
     <ClCompile Include="levTheWarBegins.cpp" />
+    <ClCompile Include="stateLevelIntro.cpp" />
+    <ClCompile Include="stateNormalMode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCampaign.h" />
@@ -175,9 +178,12 @@
     <ClInclude Include="kamLogos.h" />
     <ClInclude Include="kamMenu.h" />
     <ClInclude Include="kamStars.h" />
+    <ClInclude Include="kamState.h" />
     <ClInclude Include="kFont.h" />
     <ClInclude Include="kImage.h" />
     <ClInclude Include="levTheWarBegins.h" />
+    <ClInclude Include="stateLevelIntro.h" />
+    <ClInclude Include="stateNormalMode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

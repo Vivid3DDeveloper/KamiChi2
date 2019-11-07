@@ -8,6 +8,10 @@
 #include "kamLogos.h"
 #include "kamMenu.h"
 #include "kFont.h"
+#include "kamCampaign.h"
+#include "kamLevel.h"
+#include "kamState.h"
+#include "levTheWarBegins.h"
 
 kamCore* core = NULL;
 kamGame* game = NULL;
@@ -24,6 +28,16 @@ const int gameH = 768;
 
 void do_begincam()
 {
+
+	kamCampaign* cam = new kamCampaign(game,1);
+
+	levTheWarBegins* lev1 = new levTheWarBegins(game);
+
+	cam->setLevel(lev1, 0);
+
+	cam->begin();
+
+
 
 	while (true) {
 
@@ -44,6 +58,10 @@ void do_begincam()
 
 		core->beginRender();
 
+		cam->update();
+
+
+
 		//game->drawImg(20, 20, 200, 200, 1, 1, 1, 1,star1);
 
 		//stars->render();
@@ -53,6 +71,8 @@ void do_begincam()
 		//menus->render();
 
 		//logos->render();
+
+ 	cam->render();
 
 		core->endRender();
 

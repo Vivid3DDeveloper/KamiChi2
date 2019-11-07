@@ -1,7 +1,8 @@
 #include "kamCampaign.h"
 
-kamCampaign::kamCampaign(int numLevels) {
+kamCampaign::kamCampaign(kamGame *g,int numLevels) {
 
+	game = g;
 	levels.resize(numLevels);
 
 }
@@ -16,5 +17,27 @@ void kamCampaign::beginLevel(int num) {
 
 	curLevel = levels[num];
 	curLevelNum = num;
+
+	curLevel->init();
+
+
+
+}
+
+void kamCampaign::begin() {
+
+	beginLevel(0);
+
+}
+
+void kamCampaign::update() {
+
+	curLevel->updateBase();
+
+}
+
+void kamCampaign::render() {
+
+	curLevel->renderBase();
 
 }

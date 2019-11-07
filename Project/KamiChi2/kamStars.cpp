@@ -1,6 +1,8 @@
 #include "kamStars.h"
 #include <stdlib.h>
 
+
+
 kamStars::kamStars(kamGame* g) {
 
 	game = g;

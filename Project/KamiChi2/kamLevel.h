@@ -1,9 +1,22 @@
 #pragma once
+#include <vector>
+#include "kamState.h"
 class kamLevel
 {
 public:
 
-	kamLevel(const char* name);
+
+	kamLevel();
+
+	void setGame(kamGame* g);
+
+	void setLevel(const char* name,int states);
+
+
+	void setState(kamState* state, int num);
+
+	void beginState(int num);
+
 	bool isDone();
 
 	virtual void init() {};
@@ -11,10 +24,16 @@ public:
 	virtual void render() {};
 	virtual void done() {};
 
+	void updateBase();
+	void renderBase();
+
 private:
 
 	const char* levelName;
 	bool levelDone;
+	std::vector<kamState*> states;
+	kamState* curState;
+	kamGame* game;
 
 };
 
