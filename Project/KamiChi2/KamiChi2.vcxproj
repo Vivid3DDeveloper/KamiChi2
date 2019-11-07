@@ -155,23 +155,29 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\3rdParty\png\lodepng.cpp" />
+    <ClCompile Include="kamCampaign.cpp" />
     <ClCompile Include="kamCore.cpp" />
     <ClCompile Include="kamGame.cpp" />
     <ClCompile Include="KamiChi2.cpp" />
+    <ClCompile Include="kamLevel.cpp" />
     <ClCompile Include="kamLogos.cpp" />
     <ClCompile Include="kamMenu.cpp" />
     <ClCompile Include="kamStars.cpp" />
     <ClCompile Include="kFont.cpp" />
     <ClCompile Include="kImage.cpp" />
+    <ClCompile Include="levTheWarBegins.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="kamCampaign.h" />
     <ClInclude Include="kamCore.h" />
     <ClInclude Include="kamGame.h" />
+    <ClInclude Include="kamLevel.h" />
     <ClInclude Include="kamLogos.h" />
     <ClInclude Include="kamMenu.h" />
     <ClInclude Include="kamStars.h" />
     <ClInclude Include="kFont.h" />
     <ClInclude Include="kImage.h" />
+    <ClInclude Include="levTheWarBegins.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

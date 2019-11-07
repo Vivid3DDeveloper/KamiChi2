@@ -24,7 +24,7 @@ bool kamLogos::done() {
 
 	kImage* i = logo[(int)(numLogo - 1)];
 
-	if (i->y<130)
+	if (i->x<-150)
 	{
 
 		return true;
@@ -39,19 +39,7 @@ void kamLogos::update() {
 		kImage* s = logo[i];
 		s->x = s->x - 4;
 
-		if (i == numLogo - 1)
-		{
-
-			if (s->x < game->getW() / 2 - 128)
-			{
-				s->x = game->getW() / 2 - 128;
-				if (s->y > 128)
-				{
-					s->y = s->y - 3;
-				}
-			}
-
-		}
+	
 
 	}
 

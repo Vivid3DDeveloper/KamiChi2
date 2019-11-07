@@ -42,6 +42,15 @@
     <ClCompile Include="kFont.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kamCampaign.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kamLevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="levTheWarBegins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h">
@@ -63,6 +72,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="kFont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kamCampaign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kamLevel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="levTheWarBegins.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
