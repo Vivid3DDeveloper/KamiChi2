@@ -31,6 +31,7 @@ private:
 	int numMenu;
 	kFont* mFont;
 	int cur = 0;
-
+	kSoundSource* bleep;
+	kSoundSource* confirm;
 };
 

@@ -87,10 +87,12 @@ void input_menu(KEYS key,bool press) {
 
 		if (press) {
 
-			
+		
+			game->stopMusic();
 			menus->action();
 
 		}
+		
 	
 
 		break;

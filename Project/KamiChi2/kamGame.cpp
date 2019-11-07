@@ -6,6 +6,8 @@ kamGame::kamGame(kamCore* c) {
 	core = c;
 	engine = createIrrKlangDevice();
 	setBlend(BLENDMODE::Additive);
+	printf("Game Created/n");
+	musicPlaying = false;
 
 }
 
@@ -131,7 +133,30 @@ void kamGame::drawRect(int x, int y, int w, int h, float r, float g, float b, fl
 
 void kamGame::playMusic(const char* path) {
 
-	engine->play2D(path, true);
+	musicPlaying = true;
+	music = engine->play2D(path, true, false, true);
+
+}
+
+void kamGame::stopMusic() {
+
+	if (musicPlaying) {
+		music->stop();
+		musicPlaying = false;
+	}
+
+}
+
+kSoundSource * kamGame::loadSound(const char* path) {
+
+	return new kSoundSource(engine->addSoundSourceFromFile(path, ESM_AUTO_DETECT, true));
+
+}
+
+kSound* kamGame::playSound(kSoundSource* src,bool loop) {
+
+	return new kSound(engine->play2D(src->getSource(), loop,false,true));
+
 
 }
 

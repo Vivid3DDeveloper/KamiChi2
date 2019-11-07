@@ -19,5 +19,9 @@ private:
 	kamStars* stars;
 	float curSpd;
 	float disSpd;
+	kSoundSource* warpSrc;
+	kSoundSource* warpSrc2;
+	kSound* warpSnd;
+	kSound* warpSnd2;
 
 };

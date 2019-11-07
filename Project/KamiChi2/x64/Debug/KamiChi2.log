@@ -1,2 +1,48 @@
-﻿  stateLevelIntro.cpp
+﻿  KamiChi2.cpp
+  kFont.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(88,78): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(88,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  kSound.cpp
+  kamCampaign.cpp
+  kamGame.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(90,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(44,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(45,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(100,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(100,13): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(102,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(102,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(104,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(104,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(106,18): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(106,13): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(124,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(124,13): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(125,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(125,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(126,22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(126,15): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(127,18): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+  kamLevel.cpp
+  kamLogos.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(127,13): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamLogos.cpp(52,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  kamMenu.cpp
+  kamStars.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kamLogos.cpp(65,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(31,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(32,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(33,14): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(65,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(66,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(67,18): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(92,67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(92,54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(92,37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  kamState.cpp
+  levTheWarBegins.cpp
+  stateLevelIntro.cpp
+  stateNormalMode.cpp
+  Generating Code...
+C:\Git\KamiChi2\Project\KamiChi2\kamStars.cpp(92,22): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   KamiChi2.vcxproj -> C:\Git\KamiChi2\Project\KamiChi2\x64\Debug\KamiChi2.exe

@@ -5,6 +5,8 @@
 #include <glm//glm.hpp>
 #include <glm//ext.hpp>
 #include <irrKlang.h>
+#include "kSound.h"
+#include "kSoundSource.h"
 using namespace irrklang;
 
 enum BLENDMODE {
@@ -29,13 +31,19 @@ public:
 	void setBlend(BLENDMODE mode);
 
 	void playMusic(const char* path);
+	void stopMusic();
 	
+	kSoundSource* loadSound(const char* path);
+
+	kSound* playSound(kSoundSource* src,bool loop);
 
 private:
 
 	kamCore* core;
 	ISoundEngine* engine;
+	ISound* music;
 	BLENDMODE bMode;
+	bool musicPlaying;
 	
 
 

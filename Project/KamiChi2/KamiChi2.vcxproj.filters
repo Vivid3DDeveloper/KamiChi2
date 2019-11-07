@@ -60,6 +60,12 @@
     <ClCompile Include="stateLevelIntro.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kSound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kSoundSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h">
@@ -99,6 +105,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stateLevelIntro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kSound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kSoundSource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

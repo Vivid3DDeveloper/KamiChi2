@@ -166,6 +166,8 @@
     <ClCompile Include="kamState.cpp" />
     <ClCompile Include="kFont.cpp" />
     <ClCompile Include="kImage.cpp" />
+    <ClCompile Include="kSound.cpp" />
+    <ClCompile Include="kSoundSource.cpp" />
     <ClCompile Include="levTheWarBegins.cpp" />
     <ClCompile Include="stateLevelIntro.cpp" />
     <ClCompile Include="stateNormalMode.cpp" />
@@ -181,6 +183,8 @@
     <ClInclude Include="kamState.h" />
     <ClInclude Include="kFont.h" />
     <ClInclude Include="kImage.h" />
+    <ClInclude Include="kSound.h" />
+    <ClInclude Include="kSoundSource.h" />
     <ClInclude Include="levTheWarBegins.h" />
     <ClInclude Include="stateLevelIntro.h" />
     <ClInclude Include="stateNormalMode.h" />

@@ -9,6 +9,10 @@ kamMenu::kamMenu(kamGame* g,int num) {
 	mFont = new kFont("data/font/font.pf", game);
 	mFont->setScale(3);
 
+	bleep = game->loadSound("data/sfx/ui/bleep.wav");
+	confirm = game->loadSound("data/sfx/ui/confirm.wav");
+
+
 }
 
 void kamMenu::addMenu(const char* title, int id,void(*action)(int) ) {
@@ -35,6 +39,7 @@ void kamMenu::up() {
 		cur = numMenu - 1;
 	}
 	if (cur < 0) cur = 0;
+	game->playSound(bleep, false);
 }
 
 void kamMenu::action() {
@@ -42,6 +47,7 @@ void kamMenu::action() {
 	kMenu* m = items[cur];
 
 	m->action(0);
+	game->playSound(confirm, false);
 
 }
 
@@ -51,7 +57,7 @@ void kamMenu::down() {
 	if (cur >= numMenu) {
 		cur = 0;
 	}
-	
+	game->playSound(bleep, false);
 
 }
 
