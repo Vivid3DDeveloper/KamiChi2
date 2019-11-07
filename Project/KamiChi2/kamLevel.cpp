@@ -2,9 +2,10 @@
 
 kamLevel::kamLevel() {
 
-
+	
 
 }
+
 
 void kamLevel::setGame(kamGame* g) {
 

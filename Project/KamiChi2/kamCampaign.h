@@ -17,6 +17,13 @@ public:
 	void update();
 	void render();
 
+	void up();
+	void down();
+	void left();
+	void right();
+	void action();
+	void second();
+
 
 private:
 

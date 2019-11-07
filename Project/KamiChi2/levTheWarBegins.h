@@ -15,8 +15,14 @@ public:
 	void render();
 	void done();
 
+	void up();
+	void down();
+	void left();
+	void right();
+
 private:
 
+	objPlayer* player;
 
 };
 

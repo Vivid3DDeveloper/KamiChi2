@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include "kamState.h"
+#include "kObj.h"
 class kamLevel
 {
 public:
@@ -23,6 +24,12 @@ public:
 		return levelName;
 	};
 
+	void getStateNum() {
+
+		
+
+	}
+
 	virtual void init() {};
 	virtual void update() {};
 	virtual void render() {};
@@ -30,6 +37,13 @@ public:
 
 	void updateBase();
 	void renderBase();
+
+	virtual void left() {};
+	virtual void right() {};
+	virtual void up() {};
+	virtual void down() {};
+
+
 
 private:
 
@@ -39,6 +53,7 @@ private:
 	kamState* curState;
 	kamGame* game;
 	int stateNum = 0;
+
 
 };
 

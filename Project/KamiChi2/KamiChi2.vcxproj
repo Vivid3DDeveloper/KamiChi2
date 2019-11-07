@@ -164,11 +164,14 @@
     <ClCompile Include="kamMenu.cpp" />
     <ClCompile Include="kamStars.cpp" />
     <ClCompile Include="kamState.cpp" />
+    <ClCompile Include="kAnimSet.cpp" />
     <ClCompile Include="kFont.cpp" />
     <ClCompile Include="kImage.cpp" />
+    <ClCompile Include="kObj.cpp" />
     <ClCompile Include="kSound.cpp" />
     <ClCompile Include="kSoundSource.cpp" />
     <ClCompile Include="levTheWarBegins.cpp" />
+    <ClCompile Include="objPlayer.cpp" />
     <ClCompile Include="stateLevelIntro.cpp" />
     <ClCompile Include="stateNormalMode.cpp" />
   </ItemGroup>
@@ -181,11 +184,14 @@
     <ClInclude Include="kamMenu.h" />
     <ClInclude Include="kamStars.h" />
     <ClInclude Include="kamState.h" />
+    <ClInclude Include="kAnimSet.h" />
     <ClInclude Include="kFont.h" />
     <ClInclude Include="kImage.h" />
+    <ClInclude Include="kObj.h" />
     <ClInclude Include="kSound.h" />
     <ClInclude Include="kSoundSource.h" />
     <ClInclude Include="levTheWarBegins.h" />
+    <ClInclude Include="objPlayer.h" />
     <ClInclude Include="stateLevelIntro.h" />
     <ClInclude Include="stateNormalMode.h" />
   </ItemGroup>

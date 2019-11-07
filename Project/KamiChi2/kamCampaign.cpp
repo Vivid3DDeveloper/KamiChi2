@@ -33,11 +33,35 @@ void kamCampaign::begin() {
 void kamCampaign::update() {
 
 	curLevel->updateBase();
+	curLevel->update();
 
 }
 
 void kamCampaign::render() {
 
 	curLevel->renderBase();
+	curLevel->render();
+}
+
+void kamCampaign::up() {
+
+	curLevel->up();
+	
+}
+
+void kamCampaign::down()
+{
+
+	curLevel->down();
+
+}
+
+void kamCampaign::left() {
+	curLevel->left();
+}
+
+void kamCampaign::right() {
+
+	curLevel->right();
 
 }

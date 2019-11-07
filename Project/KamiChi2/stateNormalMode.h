@@ -1,6 +1,9 @@
 #pragma once
 #include "kamState.h"
 #include "kamStars.h"
+//#include "kObj.h";
+#include "objPlayer.h"
+#include <vector>
 
 class stateNormalMode : public kamState
 {
@@ -13,10 +16,12 @@ public:
 	void done();
 	void pause();
 	void resume();
-
+	void addObj(kObj* obj);
 private:
 
 	kamStars* stars; 
+	std::vector<kObj*> objs;
+	objPlayer* player;
 
 };
 

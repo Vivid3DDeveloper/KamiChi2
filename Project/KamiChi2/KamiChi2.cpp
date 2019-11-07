@@ -18,6 +18,7 @@ kamGame* game = NULL;
 kamStars* stars = NULL;
 kamLogos* logos = NULL;
 kamMenu* menus = NULL;
+kamCampaign* cam = NULL;
 
 int goto_code = 0;
 
@@ -26,10 +27,84 @@ const int num_stars = 300;
 const int gameW = 1300;
 const int gameH = 768;
 
+bool up, down, left, right, action, second;
+
+
+void input_game(KEYS key, bool press) {
+
+	switch (key) {
+
+	case KEYS::Action:
+
+		if (press) {
+
+
+			//game->stopMusic();
+			//menus->action();
+
+		}
+
+
+
+		break;
+	case KEYS::Up:
+
+		if (press) {
+			//menus->up();
+			
+			up = true;
+		}
+		else {
+			up = false;
+		}
+		
+		//cam->up();
+
+	
+
+		break;
+	case KEYS::Down:
+
+		if (press) {
+			down = true;
+			//menus->down();
+		}
+		else {
+			down = false;
+		}
+
+		//cam->down();
+
+		break;
+	case KEYS::Left:
+		if (press) {
+			left = true;
+		}
+		else {
+			left = false;
+		}
+		break;
+	case KEYS::Right:
+
+		if (press) {
+
+			right = true;
+		}
+		else {
+			right = false;
+		}
+
+		break;
+
+	}
+
+}
+
+
 void do_begincam()
 {
 
-	kamCampaign* cam = new kamCampaign(game,1);
+	 cam = new kamCampaign(game,1);
 
 	levTheWarBegins* lev1 = new levTheWarBegins(game);
 
@@ -37,7 +112,14 @@ void do_begincam()
 
 	cam->begin();
 
+	core->setKeyCallback(&input_game);
 
+	up = false;
+	down = false;
+	left = false;
+	right = false;
+	action = false;
+	second = false;
 
 	while (true) {
 
@@ -60,7 +142,22 @@ void do_begincam()
 
 		cam->update();
 
+		float xi, yi;
+		xi = 0;
+		yi = 0;
 
+		if (up) {
+			cam->up();
+		}
+		if (down) {
+			cam->down();
+		}
+		if (left) {
+			cam->left();
+		}
+		if (right) {
+			cam->right();
+		}
 
 		//game->drawImg(20, 20, 200, 200, 1, 1, 1, 1,star1);
 
