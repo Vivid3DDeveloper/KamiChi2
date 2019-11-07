@@ -1,7 +1,7 @@
 #include "stateLevelIntro.h"
 
 
-stateLevelIntro::stateLevelIntro(kamGame* g) {
+stateLevelIntro::stateLevelIntro(kamGame* g,const char * level) {
 
 	setGame(g);
 	curSpd = 40;
@@ -10,6 +10,9 @@ stateLevelIntro::stateLevelIntro(kamGame* g) {
 	warpSrc2 = g->loadSound("data/sfx/atmos/atmos.wav");
 	warpSnd = g->playSound(warpSrc, true);
 	warpSnd2 = g->playSound(warpSrc2, true);
+	cFont = new kFont("data/font/font.pf", g);
+	cFont->setScale(3);
+	levelName = level;
 
 }
 
@@ -47,6 +50,35 @@ void stateLevelIntro::update() {
 void stateLevelIntro::render() {
 
 	stars->render();
+
+	if (textScale < (desTextScale-0.1f )) {
+
+		textScale += (desTextScale - textScale) * 0.025f;
+		cFont->setScale(textScale);
+		
+		
+
+	}
+	else {
+
+		warpSnd->stop();
+		warpSnd2->stop();
+
+		setStateDone(true);
+
+	}
+
+	int mx, my;
+
+	mx = getGame()->getW() / 2;
+	my = getGame()->getH() / 2;
+
+	mx = mx - cFont->getWidth(levelName) / 2;
+	my = my - cFont->getHeight() / 2;
+
+	cFont->drawText(levelName, mx, my, 1, 1, 1, 1);
+
+
 
 }
 

@@ -37,12 +37,22 @@ void kamLevel::beginState(int num) {
 	curState = states[num];
 	
 	curState->init();
+	stateNum = num;
 
 }
 
 void kamLevel::updateBase() {
 
 	curState->update();
+	if (curState->isDone()) {
+
+		printf("Changing state\n");
+
+		stateNum++;
+		curState = states[stateNum];
+		curState->init();
+
+	}
 
 }
 

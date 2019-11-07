@@ -26,6 +26,12 @@ public:
 
 	}
 
+	void stop() {
+
+		sound->stop();
+
+	};
+
 private:
 	ISound* sound;
 };

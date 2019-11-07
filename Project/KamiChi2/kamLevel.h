@@ -19,6 +19,10 @@ public:
 
 	bool isDone();
 
+	const char* getLevelName() {
+		return levelName;
+	};
+
 	virtual void init() {};
 	virtual void update() {};
 	virtual void render() {};
@@ -34,6 +38,7 @@ private:
 	std::vector<kamState*> states;
 	kamState* curState;
 	kamGame* game;
+	int stateNum = 0;
 
 };
 

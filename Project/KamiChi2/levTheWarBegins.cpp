@@ -25,10 +25,12 @@ levTheWarBegins::levTheWarBegins(kamGame *g)
 
 	setGame(g);
 
-	stateLevelIntro* intro = new stateLevelIntro(g);
+	setLevel("The War Begins/n", 2);
+
+	stateLevelIntro* intro = new stateLevelIntro(g,getLevelName());
 	stateNormalMode* normal = new stateNormalMode(g);
 
-	setLevel("The War Begins", 2);
+	
 	setState(intro, 0);
 	setState(normal, 1);
 

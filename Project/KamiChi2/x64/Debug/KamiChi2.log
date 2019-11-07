@@ -1,11 +1,14 @@
 ﻿  KamiChi2.cpp
   kFont.cpp
-C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(88,78): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(88,47): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(103,9): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(109,30): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(117,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(130,79): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(130,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   kSound.cpp
   kamCampaign.cpp
   kamGame.cpp
-C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(90,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kFont.cpp(130,18): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
 C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(44,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
 C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(45,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
 C:\Git\KamiChi2\Project\KamiChi2\kamGame.cpp(100,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data

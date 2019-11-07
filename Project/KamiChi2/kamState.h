@@ -13,10 +13,13 @@ public:
 	virtual void pause() {};
 	virtual void resume() {};
 	kamGame* getGame();
+	bool isDone();
+	void setStateDone(bool sd);
 
 private:
 
 	kamGame* game;
+	bool stateDone = false;
 
 };
 

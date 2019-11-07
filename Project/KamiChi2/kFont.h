@@ -10,6 +10,8 @@ public:
 
 	kFont(const char* path,kamGame * g);
 	void drawText(const char* text, int x, int y, float r, float g, float b, float a);
+	int getWidth(const char* text);
+	int getHeight();
 	void setScale(float s)
 	{
 		scale = s;

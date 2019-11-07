@@ -12,3 +12,15 @@ kamGame* kamState::getGame() {
 	return game;
 
 }
+
+bool kamState::isDone() {
+
+	return stateDone;
+
+}
+
+void kamState::setStateDone(bool sd) {
+
+	stateDone = true;
+
+}
