@@ -25,25 +25,33 @@ void levTheWarBegins::done() {
 void levTheWarBegins::up() {
 
 	player->move(0, -1.3f);
-	
+	player->up();
 
 }
 
 void levTheWarBegins::down() {
 
 	player->move(0, 1.3f);
-
+	player->down();
 }
 
 void levTheWarBegins::left() {
 
 	player->move(-1.3f,0);
-
+	player->left();
 }
 
 void levTheWarBegins::right() {
 
+	
 	player->move(1.3f, 0);
+	player->right();
+
+}
+
+void levTheWarBegins::noaction() {
+
+	player->noaction();
 
 }
 

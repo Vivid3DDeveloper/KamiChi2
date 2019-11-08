@@ -19,6 +19,7 @@ public:
 	void down();
 	void left();
 	void right();
+	void noaction();
 
 private:
 

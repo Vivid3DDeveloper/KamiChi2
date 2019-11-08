@@ -42,23 +42,26 @@ void key_cb(GLFWwindow *win,int key,int scancode,int action,int mods) {
 		//&key_fun(KEYS::Action);
 
 	}
-	if (key == GLFW_KEY_LEFT) {
+
+	if (action == GLFW_REPEAT) return;
+
+	if (key == GLFW_KEY_LEFT || key == GLFW_KEY_A) {
 
 		key_fun(KEYS::Left, action == GLFW_PRESS);
 
 	}
 
-	if (action == GLFW_REPEAT) return;
+	
 
-	if (key == GLFW_KEY_RIGHT) {
+	if (key == GLFW_KEY_RIGHT || key == GLFW_KEY_D) {
 		key_fun(KEYS::Right, action == GLFW_PRESS);
 	}
-	if (key == GLFW_KEY_UP) {
+	if (key == GLFW_KEY_UP || key == GLFW_KEY_W) {
 
 		key_fun(KEYS::Up,action == GLFW_PRESS);
 
 	}
-	if (key == GLFW_KEY_DOWN) {
+	if (key == GLFW_KEY_DOWN || key == GLFW_KEY_S) {
 
 		key_fun(KEYS::Down,action == GLFW_PRESS);
 

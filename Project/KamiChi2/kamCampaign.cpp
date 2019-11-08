@@ -49,6 +49,12 @@ void kamCampaign::up() {
 	
 }
 
+void kamCampaign::noaction() {
+
+	curLevel->noaction();
+
+}
+
 void kamCampaign::down()
 {
 

@@ -21,6 +21,7 @@ void stateNormalMode::update() {
 
 	for (int i = 0; i < objs.size(); i++) {
 
+		objs[i]->updateAnim();
 		objs[i]->update();
 		objs[i]->internalUpdate();
 

@@ -2,15 +2,23 @@
 
 objPlayer::objPlayer() {
 
-	idle = new kAnimSet(1);
+	aidle = new kAnimSet(1);
+
 
 	kImage* idle1 = new kImage("data/img/obj/ship/player/shipidle1.png");
 	printf("Ship loaded\n");
 
-	idle->setFrame(idle1, 0);
+	aidle->setFrame(idle1, 0);
 
-	setAnim(idle, 0);
-	setSize(128, 64);
+	adown = new kAnimSet(4);
+
+	adown->setFrame(new kImage("data/img/obj/ship/player/down1-game.png"),0);
+	adown->setFrame(new kImage("data/img/obj/ship/player/down2-game.png"), 1);
+	adown->setFrame(new kImage("data/img/obj/ship/player/down3-game.png"), 2);
+	adown->setFrame(new kImage("data/img/obj/ship/player/down4-game.png"), 3);
+	
+	setAnim(aidle, 0.1f);
+	setSize(182, 108);
 	
 }
 

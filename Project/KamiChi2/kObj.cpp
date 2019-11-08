@@ -14,7 +14,7 @@ kObj::kObj() {
 
 void kObj::renderFrame() {
 
-	kImage* f = curAnim->getFrame(curFrame);
+	kImage* f = curAnim->getCurFrame();
 	//printf("Got\n");
 
 	game->setBlend(BLENDMODE::Alpha);

@@ -27,15 +27,7 @@ public:
 
 	void updateAnim() {
 
-		animTime += animSpeed;
-		if (animTime >= (curFrame + 1))
-		{
-			curFrame++;
-		}
-
-		if (curFrame >= curAnim->getNumFrames()) {
-
-		}
+		curAnim->updateSet();
 
 	}
 
@@ -44,9 +36,12 @@ public:
 	{
 		
 		curAnim = set;
-		curFrame = 0;
-		animSpeed = speed;
-		animDir = true;
+		set->reset();
+		set->setSpeed(speed);
+
+		//curFrame = 0;
+		//animSpeed = speed;
+		//animDir = true;
 
 	};
 
@@ -58,6 +53,12 @@ public:
 		h = oh;
 
 	}
+
+	virtual void up() {};
+	virtual void down() {};
+	virtual void left() {};
+	virtual void right() {};
+	virtual void noaction() {};
 
 	void setPos(int ox, int oy, int oz) {
 
@@ -85,6 +86,12 @@ public:
 		yi *= drag;
 
 	}
+
+	kAnimSet* getCurAnim() {
+
+		return curAnim;
+
+	};
 
 private:
 

@@ -1,2 +1,38 @@
-﻿  kamCore.cpp
+﻿  KamiChi2.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(35,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(58,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(59,22): warning C4244: '=': conversion from 'unsigned __int64' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(52,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(53,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(65,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(66,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  levTheWarBegins.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(67,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(35,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(58,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(59,22): warning C4244: '=': conversion from 'unsigned __int64' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(52,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(53,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(65,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(66,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  objPlayer.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(67,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(35,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(58,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(59,22): warning C4244: '=': conversion from 'unsigned __int64' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(52,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(53,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(65,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(66,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  stateNormalMode.cpp
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(67,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(35,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(58,1): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kAnimSet.h(59,22): warning C4244: '=': conversion from 'unsigned __int64' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(52,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(53,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(65,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(66,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+C:\Git\KamiChi2\Project\KamiChi2\kObj.h(67,7): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   KamiChi2.vcxproj -> C:\Git\KamiChi2\Project\KamiChi2\x64\Debug\KamiChi2.exe

@@ -157,6 +157,13 @@ void do_begincam()
 		}
 		if (right) {
 			cam->right();
+			//exit(1);
+
+		}
+		if (left == false && right == false && up == false && down == false) {
+
+			cam->noaction();
+
 		}
 
 		//game->drawImg(20, 20, 200, 200, 1, 1, 1, 1,star1);
