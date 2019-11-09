@@ -49,9 +49,15 @@ void kamCampaign::up() {
 	
 }
 
-void kamCampaign::noaction() {
+void kamCampaign::action() {
 
-	curLevel->noaction();
+	curLevel->action();
+
+}
+
+void kamCampaign::nomove() {
+
+	curLevel->nomove();
 
 }
 

@@ -1,9 +1,10 @@
 #include "stateNormalMode.h"
 
-stateNormalMode::stateNormalMode(kamGame* g) {
+stateNormalMode::stateNormalMode(kamCore * c,kamGame* g) {
 
 	setGame(g);
-	objs.resize(0);
+	scene = new kScene(c,g);
+
 
 }
 
@@ -19,13 +20,7 @@ void stateNormalMode::update() {
 
 	stars->update(4);
 
-	for (int i = 0; i < objs.size(); i++) {
-
-		objs[i]->updateAnim();
-		objs[i]->update();
-		objs[i]->internalUpdate();
-
-	}
+	scene->update();
 
 }
 
@@ -33,11 +28,7 @@ void stateNormalMode::render() {
 
 	stars->render();
 	
-	for (int i = 0; i < objs.size(); i++) {
-
-		objs[i]->render();
-
-	}
+	scene->render();
 
 }
 
@@ -56,6 +47,6 @@ void stateNormalMode::resume() {
 void stateNormalMode::addObj(kObj* o)
 {
 
-	objs.push_back(o);
+	scene->addObj(o);
 
 }

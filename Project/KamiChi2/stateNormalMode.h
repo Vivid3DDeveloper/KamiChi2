@@ -2,6 +2,7 @@
 #include "kamState.h"
 #include "kamStars.h"
 //#include "kObj.h";
+#include "kScene.h"
 #include "objPlayer.h"
 #include <vector>
 
@@ -9,7 +10,7 @@ class stateNormalMode : public kamState
 {
 public:
 
-	stateNormalMode(kamGame* g);
+	stateNormalMode(kamCore * c,kamGame* g);
 	void init();
 	void update();
 	void render();
@@ -20,8 +21,12 @@ public:
 private:
 
 	kamStars* stars; 
-	std::vector<kObj*> objs;
+	//std::vector<kObj*> objs;
+	
+	kScene* scene;
+	
 	objPlayer* player;
+
 
 };
 

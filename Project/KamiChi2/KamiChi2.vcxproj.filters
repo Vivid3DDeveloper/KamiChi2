@@ -75,6 +75,15 @@
     <ClCompile Include="kAnimSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kGlobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="objLaserBolt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="kamCore.h">
@@ -129,6 +138,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="kAnimSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="kGlobal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="objLaserBolt.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

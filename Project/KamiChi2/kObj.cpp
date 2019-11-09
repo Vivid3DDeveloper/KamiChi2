@@ -8,11 +8,14 @@ kObj::kObj() {
 	xi = 0;
 	yi = 0;
 	zi = 0;
+	curAnim = NULL;
 	
 
 };
 
 void kObj::renderFrame() {
+
+	if (curAnim == NULL) return;
 
 	kImage* f = curAnim->getCurFrame();
 	//printf("Got\n");
@@ -23,3 +26,9 @@ void kObj::renderFrame() {
 	game->drawImg(x, y, w, h, 1, 1, 1, 1, f);
 
 }
+
+void kObj::setDrag(float d) {
+
+	drag = d;
+
+};

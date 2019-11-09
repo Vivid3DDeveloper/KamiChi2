@@ -8,7 +8,7 @@ class levTheWarBegins : public kamLevel
 {
 public:
 
-	levTheWarBegins(kamGame *g);
+	levTheWarBegins(kamCore * c,kamGame *g);
 
 	void init();
 	void update();
@@ -19,7 +19,8 @@ public:
 	void down();
 	void left();
 	void right();
-	void noaction();
+	void nomove();
+	void action();
 
 private:
 

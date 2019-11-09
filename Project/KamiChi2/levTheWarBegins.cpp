@@ -49,13 +49,19 @@ void levTheWarBegins::right() {
 
 }
 
-void levTheWarBegins::noaction() {
+void levTheWarBegins::action() {
+
+	player->action();
+
+};
+
+void levTheWarBegins::nomove() {
 
 	player->noaction();
 
 }
 
-levTheWarBegins::levTheWarBegins(kamGame *g)
+levTheWarBegins::levTheWarBegins(kamCore * c,kamGame *g)
 {
 
 	setGame(g);
@@ -63,7 +69,7 @@ levTheWarBegins::levTheWarBegins(kamGame *g)
 	setLevel("The War Begins/n", 2);
 
 	stateLevelIntro* intro = new stateLevelIntro(g,getLevelName());
-	stateNormalMode* normal = new stateNormalMode(g);
+	stateNormalMode* normal = new stateNormalMode(c,g);
 
 	objPlayer* play = new objPlayer();
 

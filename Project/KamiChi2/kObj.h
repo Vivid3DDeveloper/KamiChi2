@@ -2,6 +2,8 @@
 #include "kamGame.h"
 #include "kAnimSet.h"
 
+class kScene;
+
 class kObj
 {
 
@@ -24,9 +26,16 @@ public:
 	virtual void render() {};
 	virtual void init() {};
 	virtual void done() {};
+	virtual void action() {};
+	virtual void left() {};
+	virtual void right() {};
+	virtual void up() {};
+	virtual void down() {}
+	virtual void noaction() {};
 
 	void updateAnim() {
 
+		if (curAnim == NULL) return;
 		curAnim->updateSet();
 
 	}
@@ -54,11 +63,7 @@ public:
 
 	}
 
-	virtual void up() {};
-	virtual void down() {};
-	virtual void left() {};
-	virtual void right() {};
-	virtual void noaction() {};
+	
 
 	void setPos(int ox, int oy, int oz) {
 
@@ -93,6 +98,23 @@ public:
 
 	};
 
+	void setOwner(kScene* own)
+	{
+		owner = own;
+
+	};
+
+	kScene* getOwner() {
+
+		return owner;
+
+	};
+
+	void setDrag(float d);
+
+	float getX() { return x; };
+	float getY() { return y; };
+
 private:
 
 	const char* name;
@@ -106,6 +128,7 @@ private:
 	float animSpeed = 0.1f;
 	bool animDir = 0;
 	kamGame* game;
+	kScene* owner;
 
 };
 

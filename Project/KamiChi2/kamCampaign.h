@@ -23,7 +23,7 @@ public:
 	void right();
 	void action();
 	void second();
-	void noaction();
+	void nomove();
 
 
 private:

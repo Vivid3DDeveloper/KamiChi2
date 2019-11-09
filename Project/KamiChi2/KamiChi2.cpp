@@ -38,10 +38,14 @@ void input_game(KEYS key, bool press) {
 
 		if (press) {
 
-
+			action = true;
 			//game->stopMusic();
 			//menus->action();
 
+		}
+		else {
+
+			action = false;
 		}
 
 
@@ -106,7 +110,7 @@ void do_begincam()
 
 	 cam = new kamCampaign(game,1);
 
-	levTheWarBegins* lev1 = new levTheWarBegins(game);
+	levTheWarBegins* lev1 = new levTheWarBegins(core,game);
 
 	cam->setLevel(lev1, 0);
 
@@ -160,9 +164,13 @@ void do_begincam()
 			//exit(1);
 
 		}
+		if (action)
+		{
+			cam->action();
+		}
 		if (left == false && right == false && up == false && down == false) {
 
-			cam->noaction();
+			cam->nomove();
 
 		}
 

@@ -1,6 +1,9 @@
 #pragma once
 #include "kObj.h"
+#include "objLaserBolt.h"
+#include "kScene.h"
 
+class kScene;
 class objPlayer : public kObj
 {
 public:
@@ -12,7 +15,7 @@ public:
 	
 	void left() {
 
-		if (getCurAnim() == aidle || getCurAnim() == aup || getCurAnim() == adown) {
+		if (getCurAnim() == aidle || getCurAnim() == aup || getCurAnim() == adown || getCurAnim() == aright) {
 
 			aleft->setType(ANIMTYPE::Once);
 			setAnim(aleft, 0.4);
@@ -23,8 +26,8 @@ public:
 
 	void right() {
 
-		if (getCurAnim() == aidle || getCurAnim() == aup || getCurAnim() == adown)
-		{
+		if (getCurAnim() == aidle || getCurAnim() == aup || getCurAnim() == adown || getCurAnim() == aleft)
+		{ 
 
 			aright->setType(ANIMTYPE::Once);
 			setAnim(aright, 0.4);
@@ -44,6 +47,15 @@ public:
 		}
 
 	}
+
+	void action() {
+
+		objLaserBolt* lb = new objLaserBolt();
+		lb->setGame(getGame());
+		lb->setPos(getX()+178, getY()+45, 0);
+		getOwner()->addObj(lb);
+
+	};
 
 	void down() {
 

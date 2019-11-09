@@ -42,7 +42,8 @@ public:
 	virtual void right() {};
 	virtual void up() {};
 	virtual void down() {};
-	virtual void noaction() {};
+	virtual void nomove() {};
+	virtual void action() {};
 
 
 private:
